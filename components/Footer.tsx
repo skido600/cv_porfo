@@ -3,6 +3,7 @@ import React from "react";
 const NAME = "Leo Wave";
 const PORTFOLIO_URL = "";
 const PORTFOLIO_LABEL = "";
+const CURRENT_YEAR = new Date().getFullYear();
 
 function Footer() {
   return (
@@ -19,8 +20,9 @@ function Footer() {
           </a>
           .
         </p>
+
         <p className="opacity-50">
-          &copy; {new Date().getFullYear()} {NAME}
+          &copy; {CURRENT_YEAR} {NAME}
         </p>
       </div>
     </footer>
